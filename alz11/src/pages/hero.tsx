@@ -6,7 +6,7 @@ export default function Hero() {
 			<div className='flex-wrap'>
 				<h1 className='text-8xl font-extrabold'>Hey there, I'm Alex!</h1>
 				<h3 className='text-4xl py-10'>Computer Science Student</h3>
-				<div className='text-3xl flex-wrap mx-45 tracking-wide'>
+				<div className='text-3xl flex-wrap mx-45 tracking-widest'>
 					<p>
 						I'm a Computer Science student at Monash University in Melbourne, Australia. I love turning complex ideas
 						into elegant software solutions that make a real impact.
@@ -36,7 +36,11 @@ export default function Hero() {
 					</p>
 				</div>
 			</div>
-			<img src='hero.png' alt='Alex image' className='w-1/2 max-h-fit z-10 object-contain px-40 pt-40'></img>
+			<img
+				src='hero.png'
+				alt='Alex image'
+				className='min-w-1/2 max-h-fit z-10 object-contain px-40 pt-40 float-right'
+			></img>
 		</section>
 	);
 }
