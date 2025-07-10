@@ -1,16 +1,26 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { IoMenu, IoClose } from 'react-icons/io5';
 
 type NavbarProps = {
 	options: string[];
 };
 
 export default function Navbar({ options }: NavbarProps) {
+	const [open, setOpen] = useState(false);
+
 	return (
 		<nav
 			aria-label='Primary'
-			className='flex items-center justify-between gap-6 mx-4 sm:mx-14 md:mx-18 lg:mx-30 py-10 text-3xl font-mono '
+			className='
+			flex items-center justify-between gap-6 py-10 font-mono
+			sm:mx-10
+			md:mx-15 
+			lg:mx-10
+			lg:text-sm
+			xl:text-lg'
 		>
-			<Link to={'/'} className='font-bold tracking-tight text-5xl hover:scale-120 transition duration-300 ease-in-out'>
+			<Link to={'/'} className='font-bold hover:scale-120 transition duration-300 ease-in-out mx-8'>
 				AlZ11
 			</Link>
 
