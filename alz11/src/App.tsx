@@ -1,5 +1,4 @@
 import './App.css';
-import AboutPage from './pages/page.tsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from '../components/Navbar.tsx';
 import Landing from './pages/landing.tsx';

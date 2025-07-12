@@ -10,7 +10,7 @@ interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
 export default function AuroraBackground({ children, showRadialGradient = true }: AuroraBackgroundProps) {
 	return (
 		<main>
-			<div className={cn('transition-bg min-h-screen text-gray-50 bg-zinc-50 dark:bg-slate-950')}>
+			<div className={cn('transition-bg text-gray-50 bg-zinc-50 dark:bg-slate-950')}>
 				<div
 					className='pointer-events-none absolute inset-0 overflow-hidden'
 					style={

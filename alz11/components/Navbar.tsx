@@ -17,7 +17,7 @@ export default function Navbar({ options }: NavbarProps) {
 			sm:mx-10
 			md:mx-15 
 			lg:mx-10
-			lg:text-sm
+			lg:text-md
 			xl:text-lg'
 		>
 			<Link to={'/'} className='font-bold hover:scale-120 transition duration-300 ease-in-out mx-8'>
@@ -32,10 +32,10 @@ export default function Navbar({ options }: NavbarProps) {
 						</Link>
 					</li>
 				))}
-				<li>
+				<li className='hover:scale-120 transition duration-300 ease-in-out'>
 					<a href='AZResume.pdf'>Resume</a>
 				</li>
-				<li>
+				<li className='hover:scale-120 transition duration-300 ease-in-out'>
 					<a href='#contact'>Contact</a>
 				</li>
 			</ul>

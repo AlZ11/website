@@ -18,7 +18,7 @@ function ContactButton({ href, label, Icon, color }: BtnProps) {
 			className={`flex items-center gap-5 rounded-lg px-4 py-2 text-white ${color}
                   hover:scale-110 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2`}
 		>
-			<Icon className='h-5 w-5' />
+			<Icon className='sm:h-6 sm:w-6 lg:h-5 lg:w-5' />
 			<span>{label}</span>
 		</a>
 	);
@@ -27,9 +27,11 @@ function ContactButton({ href, label, Icon, color }: BtnProps) {
 export default function ContactSection() {
 	return (
 		<section id='#contact' className='flex flex-col items-center gap-6 py-16 font-mono text-center'>
-			<h2 className='text-3xl font-bold'>Contact me!</h2>
+			<h2 className='text-xl font-bold'>Contact me!</h2>
 
-			<p className='max-w-lg text-lg text-muted-foreground'>Feel free to reach out for anything!&nbsp;👋</p>
+			<p className='max-w-lg text-md md:text-md 2xl:text-lg text-muted-foreground'>
+				Feel free to reach out for anything!&nbsp;👋
+			</p>
 
 			<div className='flex flex-wrap justify-center gap-4'>
 				<ContactButton href='mailto:alexanderzhang950@gmail.com' label='Email' Icon={SiGmail} color='bg-red-500' />

@@ -9,7 +9,7 @@ export default function Landing() {
 					AlZ11 -&nbsp;
 					<span className='text-blue-600 dark:text-blue-500'>software developer</span>
 				</h1>
-				<p className='mt-7 text-muted-foreground text-wrap max-w-md 2xl:max-w-2xl text-sm md:text-md 2xl:text-xl'>
+				<p className='mt-7 text-muted-foreground text-wrap max-w-sm md:max-w-xl 2xl:max-w-2xl text-md md:text-lg 2xl:text-xl'>
 					I'm Alex — a computer science student with a passion for data science and software development
 				</p>
 				<div className='text-6xl animate-bounce [animation-duration:3s] pt-70'>
