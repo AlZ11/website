@@ -11,7 +11,7 @@ function App() {
 	return (
 		<Router>
 			<AuroraBackground>
-				<Navbar options={['About', 'Projects']} />
+				<Navbar options={['About', 'Projects', 'Extracurriculars']} />
 				<Routes>
 					<Route path='' element={<Landing />}></Route>
 					<Route path='/about' element={<Hero />}></Route>

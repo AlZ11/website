@@ -1,7 +1,17 @@
 import ContactSection from '../../components/Contact';
 import { MdKeyboardDoubleArrowDown } from 'react-icons/md';
+import { useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function Landing() {
+	const contactRef = useRef(null);
+	const { hash } = useLocation();
+
+	useEffect(() => {
+		if (hash === '#contact' && contactRef.current) {
+			contactRef.current.scrollIntoView({ behavior: 'smooth' });
+		}
+	}, [hash]);
 	return (
 		<>
 			<section className='flex flex-col items-center justify-center min-h-screen py-10 px-10 font-mono text-center pointer-events-none'>
@@ -13,12 +23,12 @@ export default function Landing() {
 					I'm Alex — a computer science student with a passion for data science and software development
 				</p>
 				<div className='text-6xl animate-bounce [animation-duration:3s] pt-70'>
-					<a href='placeholder'>
-						<MdKeyboardDoubleArrowDown />
-					</a>
+					<MdKeyboardDoubleArrowDown />
 				</div>
 			</section>
-			<ContactSection />
+			<section ref={contactRef} id='contact' className='scroll-mt-0'>
+				<ContactSection />
+			</section>
 		</>
 	);
 }

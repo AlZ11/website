@@ -1,13 +1,20 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import { IoMenu, IoClose } from 'react-icons/io5';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 type NavbarProps = {
 	options: string[];
 };
 
 export default function Navbar({ options }: NavbarProps) {
-	const [open, setOpen] = useState(false);
+	const navigate = useNavigate();
+	const { pathname } = useLocation();
+
+	const onContactClick = () => {
+		if (pathname === '/') {
+			window.location.hash = 'contact';
+		} else {
+			navigate('/#contact');
+		}
+	};
 
 	return (
 		<nav
@@ -36,7 +43,7 @@ export default function Navbar({ options }: NavbarProps) {
 					<a href='AZResume.pdf'>Resume</a>
 				</li>
 				<li className='hover:scale-120 transition duration-300 ease-in-out'>
-					<a href='#contact'>Contact</a>
+					<button onClick={onContactClick}>Contact</button>
 				</li>
 			</ul>
 		</nav>
