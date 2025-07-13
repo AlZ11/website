@@ -15,7 +15,7 @@ function App() {
 	return (
 		<Router>
 			<AuroraBackground>
-				<Navbar options={['About', 'Projects', 'Map', 'ScrapPage']} />
+				<Navbar options={['About', 'Projects', 'Map']} />
 				<AnimatedRoutes paths={PATH}>
 					<Landing />
 					<Hero />
