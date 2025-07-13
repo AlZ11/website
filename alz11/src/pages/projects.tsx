@@ -72,18 +72,18 @@ const PROJECTS = [
 
 export default function Projects() {
 	return (
-		<div className='text-white font-mono max-w-7xl px-4 sm:px-6 lg:px-7 mx-auto'>
-			<div className='max-w-lg sm:py-24 px-5 lg:max-w-none lg:py-32 mx-auto'>
+		<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-white font-mono'>
+			<div className='mx-auto max-w-max py-16 sm:py-24 lg:py-32'>
 				<h2 className='text-2xl font-bold font-mono'>My projects</h2>
 
-				<div className='mt-8 space-y-12 lg:grid lg:grid-cols-3 lg:space-y-5 lg:gap-x-15'>
+				<div className='mt-8 space-y-12 grid md:grid-cols-2 lg:grid-cols-3 lg:space-y-8 lg:gap-x-8'>
 					{PROJECTS.map((project) => (
 						<div key={project.name} className='group relative'>
 							<a href={project.href}>
-								<Card className='flex flex-col items-start rounded-xl p-6 text-left hover:scale-110 transition duration-300 ease-in-out'>
+								<Card className='items-start rounded-xl p-6 text-left'>
 									<i>{project.imageSrc}</i>
 									<p className='mt-3 text-2xl font-semibold'>{project.name}</p>
-									<h3 className='mt-2 text-gray-500 text-sm'>
+									<h3 className='mt-6 text-gray-500 text-sm'>
 										<span className='absolute inset-0' />
 										{project.description}
 									</h3>

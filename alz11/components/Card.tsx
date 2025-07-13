@@ -1,7 +1,12 @@
 import { cn } from '../lib/utils';
 import { useRef } from 'react';
 
-export default function Card({ children, className }: { children: React.ReactNode; className?: string }) {
+type CardProps = {
+	children: React.ReactNode;
+	className?: string;
+};
+
+export default function Card({ children, className }: CardProps) {
 	const isPointerInside = useRef(false);
 	const refElement = useRef<HTMLDivElement>(null);
 	const state = useRef({
