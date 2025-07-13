@@ -4,7 +4,7 @@ import { useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 export default function Landing() {
-	const contactRef = useRef(null);
+	const contactRef = useRef<HTMLElement | null>(null);
 	const { hash } = useLocation();
 
 	useEffect(() => {

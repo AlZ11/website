@@ -16,7 +16,7 @@ import {
 	SiSelenium,
 	SiHtml5
 } from 'react-icons/si';
-import { FaReact, FaPython, FaJava } from 'react-icons/fa';
+import { FaReact, FaPython } from 'react-icons/fa';
 import { ImStatsDots } from 'react-icons/im';
 import Card from '../../components/Card';
 
