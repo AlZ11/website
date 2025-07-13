@@ -1,4 +1,5 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import Dropbar from './Dropbar';
 
 type NavbarProps = {
 	options: string[];
@@ -20,7 +21,7 @@ export default function Navbar({ options }: NavbarProps) {
 		<nav
 			aria-label='Primary'
 			className='
-			flex items-center justify-between gap-6 py-10 font-mono
+			relative flex items-center justify-between gap-6 py-10 font-mono
 			sm:mx-10
 			md:mx-15 
 			lg:mx-10
@@ -31,7 +32,7 @@ export default function Navbar({ options }: NavbarProps) {
 				AlZ11
 			</Link>
 
-			<ul className={`grid grid-flow-col auto-cols-max gap-8 rounded-md px-4 py-2`}>
+			<ul className={'hidden sm:grid grid-flow-col auto-cols-max gap-8 rounded-md px-4 py-2'}>
 				{options.map((item) => (
 					<li key={item} className='hover:scale-120 transition duration-300 ease-in-out'>
 						<Link to={`/${item.toLowerCase()}`} className='font-medium focus:outline-none focus-visible:ring-'>
@@ -46,6 +47,7 @@ export default function Navbar({ options }: NavbarProps) {
 					<button onClick={onContactClick}>Contact</button>
 				</li>
 			</ul>
+			<Dropbar options={options} />
 		</nav>
 	);
 }

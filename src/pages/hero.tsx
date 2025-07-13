@@ -6,7 +6,7 @@ export default function Hero() {
 				alt='Alex portrait'
 				className='w-full shrink-0 rounded-b-[25%] shadow-lg mb-6 mx-auto max-w-xs
 				md:max-w-sm md:float-left md:mr-6 md:h-1/3 md:w-1/3 md:mb-0
-				lg:float-none lg:max-w-md lg:mr-0'
+				lg:float-none lg:max-w-md lg:mr-0 z-10'
 			/>
 
 			<div className='flex-1'>

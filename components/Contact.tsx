@@ -29,7 +29,7 @@ export default function ContactSection() {
 		<section id='#contact' className='flex flex-col items-center gap-6 py-16 font-mono text-center'>
 			<h2 className='text-xl font-bold'>Contact me!</h2>
 
-			<p className='max-w-lg text-md md:text-md 2xl:text-lg text-muted-foreground'>
+			<p className='max-w-lg text-xs sm:text-md 2xl:text-lg text-muted-foreground'>
 				Feel free to reach out for anything!&nbsp;👋
 			</p>
 
