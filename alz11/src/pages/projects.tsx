@@ -13,7 +13,8 @@ import {
 	SiPlotly,
 	SiGeopandas,
 	SiJavascript,
-	SiSelenium
+	SiSelenium,
+	SiHtml5
 } from 'react-icons/si';
 import { FaReact, FaPython, FaJava } from 'react-icons/fa';
 import { ImStatsDots } from 'react-icons/im';
@@ -29,7 +30,7 @@ const PROJECTS = [
 		imageSrc: <IoPersonCircle size={ICONSIZE} />,
 		imageAlt: 'Personal Website image',
 		href: 'https://github.com/AlZ11/website',
-		tools: [<FaReact />, <SiTailwindcss />, <SiTypescript />, <SiCss3 />]
+		tools: [<FaReact />, <SiTailwindcss />, <SiTypescript />, <SiHtml5 />, <SiCss3 />]
 	},
 	{
 		name: 'ETF Analysis',
@@ -71,11 +72,11 @@ const PROJECTS = [
 
 export default function Projects() {
 	return (
-		<div className='text-white font-mono max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto'>
+		<div className='text-white font-mono max-w-7xl px-4 sm:px-6 lg:px-7 mx-auto'>
 			<div className='max-w-lg sm:py-24 px-5 lg:max-w-none lg:py-32 mx-auto'>
 				<h2 className='text-2xl font-bold font-mono'>My projects</h2>
 
-				<div className='mt-8 space-y-12 lg:grid lg:grid-cols-3 lg:space-y-20 lg:gap-x-15'>
+				<div className='mt-8 space-y-12 lg:grid lg:grid-cols-3 lg:space-y-5 lg:gap-x-15'>
 					{PROJECTS.map((project) => (
 						<div key={project.name} className='group relative'>
 							<a href={project.href}>
