@@ -7,7 +7,6 @@ import Projects from './pages/projects.tsx';
 import AuroraBackground from '../components/aurora-background.tsx';
 import Footer from '../components/Footer.tsx';
 import Map from './pages/map.tsx';
-import Page from '../components/Card.tsx';
 import AnimatedRoutes from '../components/Transition.tsx';
 
 const PATH = ['', '/about', '/projects', '/map'];
@@ -16,7 +15,7 @@ function App() {
 	return (
 		<Router>
 			<AuroraBackground>
-				<Navbar options={['About', 'Projects', 'Map', 'Page']} />
+				<Navbar options={['About', 'Projects', 'Map', 'ScrapPage']} />
 				<AnimatedRoutes paths={PATH}>
 					<Landing />
 					<Hero />

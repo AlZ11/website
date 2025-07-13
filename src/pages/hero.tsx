@@ -1,30 +1,16 @@
 export default function Hero() {
 	return (
-		<article
-			className='
-		  font-mono leading-relaxed
-		  mx-auto max-w-7xl        /* keeps line length sane on wide screens */
-		  px-4 py-12               /* mobile-friendly padding */
-		  lg:flex lg:items-start lg:gap-8'
-		>
+		<article className='font-mono leading-relaxed mx-auto max-w-7xl px-4 py-12 lg:flex lg:items-start lg:gap-8'>
 			<img
 				src='/hero.png'
 				alt='Alex portrait'
-				className='
-				w-full max-w-xs mx-auto            /* centred image on small screens */
-				md:max-w-sm md:float-left md:mr-6 md:h-1/3 md:w-1/3  /* float & wrap ≥ 768 px */
-				lg:float-none lg:max-w-md lg:mr-0  /* cancel float in flex row */
-				mb-6 md:mb-0                       /* gap below when stacked */
-				shrink-0 rounded-b-[25%] shadow-lg'
+				className='w-full shrink-0 rounded-b-[25%] shadow-lg mb-6 mx-auto max-w-xs
+				md:max-w-sm md:float-left md:mr-6 md:h-1/3 md:w-1/3 md:mb-0
+				lg:float-none lg:max-w-md lg:mr-0'
 			/>
 
 			<div className='flex-1'>
-				<h2
-					className='
-					mt-4 md:mt-0                     /* pull up when image floats */
-					text-3xl sm:text-4xl md:text-5xl xl:text-6xl
-					font-extrabold'
-				>
+				<h2 className='mt-4 font-extrabold text-3xl sm:text-4xl md:mt-0 md:text-5xl xl:text-6xl'>
 					Hey there, I'm Alex!
 				</h2>
 				<h3 className='my-4 text-lg sm:text-xl md:text-2xl xl:text-3xl'>Computer&nbsp;Science&nbsp;Student</h3>
