@@ -58,10 +58,11 @@ export default function Dropbar({ options }: DropbarProps) {
 			<button
 				aria-label='Toggle menu'
 				onClick={() => setOpen(!open)}
-				className={`sm:hidden ${open ? 'fixed' : 'absolute'} left-80 right-0 top-10 text-xl`}
+				className={`sm:hidden ${open ? 'fixed' : 'absolute'} top-10 right-8 z-50 text-xl`}
 			>
 				{open ? <IoClose /> : <IoMenu />}
 			</button>
+
 			<AnimatePresence>
 				{open && (
 					<motion.nav

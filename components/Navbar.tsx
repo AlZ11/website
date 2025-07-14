@@ -1,11 +1,11 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Dropbar from './Dropbar';
 
-type NavbarProps = {
+type NavProps = {
 	options: string[];
 };
 
-export default function Navbar({ options }: NavbarProps) {
+export default function Navbar({ options }: NavProps) {
 	const navigate = useNavigate();
 	const { pathname } = useLocation();
 
@@ -31,7 +31,6 @@ export default function Navbar({ options }: NavbarProps) {
 			<Link to={'/'} className='font-bold hover:scale-120 transition duration-300 ease-in-out mx-8'>
 				AlZ11
 			</Link>
-
 			<ul className={'hidden sm:grid grid-flow-col auto-cols-max gap-8 rounded-md px-4 py-2'}>
 				{options.map((item) => (
 					<li key={item} className='hover:scale-120 transition duration-300 ease-in-out'>
@@ -47,7 +46,9 @@ export default function Navbar({ options }: NavbarProps) {
 					<button onClick={onContactClick}>Contact</button>
 				</li>
 			</ul>
-			<Dropbar options={options} />
+			<div className='sm:hidden'>
+				<Dropbar options={options} />
+			</div>
 		</nav>
 	);
 }
