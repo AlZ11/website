@@ -71,7 +71,7 @@ export default function Dropbar({ options }: DropbarProps) {
 						animate='open'
 						exit='closed'
 						variants={CONTAINERVARIANTS}
-						className='sm:hidden fixed left-60 right-0 top-15 z-50'
+						className='sm:hidden absolute mr-10 right-0 top-15 z-50'
 					>
 						<motion.ul className='flex flex-col px-6 py-4 space-y-5 text-sm'>
 							{options.map((item) => (
