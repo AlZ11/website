@@ -28,7 +28,7 @@ export default function AuroraBackground({ children, showRadialGradient = true }
 							'--indigo-300': '#a5b4fc',
 							'--violet-200': '#ddd6fe',
 							'--black': '#000',
-							'--white': '#fff',
+							'--white': '#172347',
 							'--transparent': 'transparent'
 						} as React.CSSProperties
 					}
