@@ -11,13 +11,13 @@ import BlogIndex from './pages/blog-index.tsx';
 import BlogPostPage from './pages/blog-post.tsx';
 import AnimatedRoutes from '../components/Transition.tsx';
 
-const PATH = ['', '/about', '/projects', '/map', '/blog', '/blog/:slug'];
+const PATH = ['', '/about', '/projects'];
 
 function App() {
 	return (
 		<Router>
 			<AuroraBackground>
-				<Navbar options={['About', 'Projects', 'Map', 'Blog']} />
+				<Navbar options={['About', 'Projects']} />
 				<AnimatedRoutes paths={PATH}>
 					<Landing />
 					<Hero />
