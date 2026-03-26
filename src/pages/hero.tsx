@@ -16,7 +16,7 @@ export default function Hero() {
 				<h3 className='my-4 text-lg sm:text-xl md:text-2xl xl:text-3xl'>Computer&nbsp;Science&nbsp;Student</h3>
 				<div className='space-y-6 text-sm sm:text-base md:text-lg xl:text-xl tracking-widest'>
 					<p>
-						I'm a Computer Science student at Monash University in Melbourne, Australia. I love turning complex ideas
+						I'm an exchange student studying CS at Waseda University in Tokyo, Japan. I love turning complex ideas
 						into elegant software solutions that make a real impact.
 					</p>
 					<p>

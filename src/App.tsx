@@ -7,8 +7,6 @@ import Projects from './pages/projects.tsx';
 import AuroraBackground from '../components/aurora-background.tsx';
 import Footer from '../components/Footer.tsx';
 import Map from './pages/map.tsx';
-import BlogIndex from './pages/blog-index.tsx';
-import BlogPostPage from './pages/blog-post.tsx';
 import AnimatedRoutes from '../components/Transition.tsx';
 
 const PATH = ['', '/about', '/projects'];
@@ -23,8 +21,6 @@ function App() {
 					<Hero />
 					<Projects />
 					<Map />
-					<BlogIndex />
-					<BlogPostPage />
 				</AnimatedRoutes>
 				<Footer />
 			</AuroraBackground>

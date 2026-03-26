@@ -40,8 +40,7 @@ export default function Navbar({ options }: NavProps) {
 					</li>
 				))}
 				<li className='hover:scale-120 transition duration-300 ease-in-out'>
-					{/* <a href='/AZResume.pdf'>Resume</a> */}
-					<a>Resume Updating...</a>
+					<a href='/Alex_Resume.pdf'>Resume</a>
 				</li>
 				<li className='hover:scale-120 transition duration-300 ease-in-out'>
 					<button onClick={onContactClick}>Contact</button>
