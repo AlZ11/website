@@ -83,7 +83,7 @@ export default function Dropbar({ options }: DropbarProps) {
 							))}
 
 							<motion.li variants={ITEMVARIANTS}>
-								<a href='/AZResume.pdf' onClick={handleNav} className='block font-medium'>
+								<a href='/Alex_Resume.pdf' onClick={handleNav} className='block font-medium'>
 									Resume
 								</a>
 							</motion.li>
