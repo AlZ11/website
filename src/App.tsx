@@ -10,7 +10,7 @@ import Map from './pages/map.tsx';
 import AnimatedRoutes from '../components/Transition.tsx';
 
 const PATH = ['', '/about', '/projects'];
-
+// test comment
 function App() {
 	return (
 		<Router>
