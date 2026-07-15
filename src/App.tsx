@@ -9,8 +9,8 @@ import Footer from '../components/Footer.tsx';
 import Map from './pages/map.tsx';
 import AnimatedRoutes from '../components/Transition.tsx';
 
-const PATH = ['', '/about', '/projects', '/map'];
-
+const PATH = ['', '/about', '/projects'];
+// test comment
 function App() {
 	return (
 		<Router>
