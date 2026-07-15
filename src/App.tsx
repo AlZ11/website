@@ -15,14 +15,18 @@ function App() {
 	return (
 		<Router>
 			<AuroraBackground>
-				<Navbar options={['About', 'Projects']} />
-				<AnimatedRoutes paths={PATH}>
-					<Landing />
-					<Hero />
-					<Projects />
-					<Map />
-				</AnimatedRoutes>
-				<Footer />
+				<div className='relative z-10 flex min-h-screen flex-col'>
+					<Navbar options={['About', 'Projects']} />
+					<div className='flex-1'>
+						<AnimatedRoutes paths={PATH}>
+							<Landing />
+							<Hero />
+							<Projects />
+							<Map />
+						</AnimatedRoutes>
+					</div>
+					<Footer />
+				</div>
 			</AuroraBackground>
 		</Router>
 	);
