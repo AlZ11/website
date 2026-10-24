@@ -117,3 +117,80 @@
 		background-size: 22px 22px;
 	}
 }
+
+/* Globe markers (created imperatively by globe.gl, so styled with plain CSS) */
+.map-marker {
+	position: absolute;
+	transition: opacity 0.25s;
+}
+.map-marker .map-dot {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	background: var(--color-accent);
+	box-shadow: 0 0 10px 2px rgba(96, 165, 250, 0.65);
+	cursor: pointer;
+}
+.map-marker.is-key .map-dot {
+	width: 13px;
+	height: 13px;
+	background: #bfdbfe;
+	box-shadow: 0 0 14px 3px rgba(96, 165, 250, 0.9);
+}
+.map-marker.is-key::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid rgba(96, 165, 250, 0.55);
+	animation: map-ping 2.4s ease-out infinite;
+	pointer-events: none;
+}
+@keyframes map-ping {
+	0% {
+		opacity: 0.8;
+		transform: translate(-50%, -50%) scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(3.4);
+	}
+}
+.map-marker.is-sel .map-dot {
+	background: #ffffff;
+	box-shadow: 0 0 18px 5px rgba(96, 165, 250, 1);
+}
+.map-marker .map-label {
+	position: absolute;
+	left: 12px;
+	top: 0;
+	transform: translateY(-50%);
+	white-space: nowrap;
+	font-family: var(--font-mono);
+	font-size: 13px;
+	color: #f4f4f5;
+	text-shadow: 0 1px 4px #000, 0 0 3px #000;
+	opacity: 0;
+	transition: opacity 0.2s;
+	pointer-events: none;
+}
+.map-marker.is-key .map-label {
+	font-weight: 600;
+}
+.map-marker.show-label .map-label {
+	opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.map-marker.is-key::before {
+		animation: none;
+	}
+}
