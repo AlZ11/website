@@ -1,4 +1,4 @@
-import { HiMapPin, HiAcademicCap, HiCodeBracket, HiBuildingOffice } from 'react-icons/hi2';
+import { HiMapPin, HiAcademicCap, HiBuildingOffice } from 'react-icons/hi2';
 import { GiSoccerBall } from 'react-icons/gi';
 
 const FACTS = [
