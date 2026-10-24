@@ -88,7 +88,7 @@ export default function Dropbar({ options }: DropbarProps) {
 
 							<motion.li variants={ITEMVARIANTS}>
 								<a
-									href='/Alex_Resume.pdf'
+									href='/AlexZResume.pdf'
 									target='_blank'
 									rel='noopener noreferrer'
 									onClick={handleNav}

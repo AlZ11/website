@@ -58,7 +58,7 @@ export default function Navbar({ options }: NavProps) {
 					))}
 					<li>
 						<a
-							href='/Alex_Resume.pdf'
+							href='/AlexZResume.pdf'
 							target='_blank'
 							rel='noopener noreferrer'
 							className={linkBase}
