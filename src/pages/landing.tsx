@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useRef, useEffect, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const STACK = ['C++', 'Python', 'TypeScript', 'React', 'pandas'];
+const STACK = ['C++', 'Python'];
 
 export default function Landing() {
 	const contactRef = useRef<HTMLElement | null>(null);
@@ -26,14 +26,6 @@ export default function Landing() {
 	return (
 		<>
 			<section className='relative flex min-h-[calc(100vh-6rem)] flex-col items-center justify-center px-6 py-16 text-center font-mono'>
-				<span className='mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300'>
-					<span className='relative flex h-2 w-2'>
-						<span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75' />
-						<span className='relative inline-flex h-2 w-2 rounded-full bg-emerald-400' />
-					</span>
-					Open to internships & collaboration
-				</span>
-
 				<h1 className='max-w-4xl text-4xl font-extrabold tracking-tight text-white md:text-6xl 2xl:text-7xl'>
 					Hi, I'm Alex —<br className='hidden sm:block' />
 					<span className='text-gradient'> software engineer</span>

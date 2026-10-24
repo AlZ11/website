@@ -1,10 +1,10 @@
-import { HiMapPin, HiAcademicCap, HiCodeBracket } from 'react-icons/hi2';
+import { HiMapPin, HiAcademicCap, HiCodeBracket, HiBuildingOffice } from 'react-icons/hi2';
 import { GiSoccerBall } from 'react-icons/gi';
 
 const FACTS = [
-	{ Icon: HiMapPin, label: 'Tokyo, Japan' },
-	{ Icon: HiAcademicCap, label: 'Waseda Uni' },
-	{ Icon: HiCodeBracket, label: 'Systems & data' },
+	{ Icon: HiMapPin, label: 'Melbourne, AUS' },
+	{ Icon: HiAcademicCap, label: 'Monash Uni' },
+	{ Icon: HiBuildingOffice, label: 'CSIRO Data61'},
 	{ Icon: GiSoccerBall, label: 'Footballer' }
 ];
 
@@ -43,7 +43,7 @@ export default function Hero() {
 
 					<div className='mt-8 space-y-5 text-sm leading-relaxed text-zinc-300 sm:text-base'>
 						<p>
-							I'm an exchange student studying CS at Waseda University in Tokyo, Japan. I love turning
+							I'm a recent CS graduate based in Melbourne, Australia. I love turning
 							complex ideas into elegant software solutions that make a real impact.
 						</p>
 						<p>

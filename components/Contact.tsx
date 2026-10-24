@@ -35,10 +35,8 @@ export default function ContactSection() {
 	return (
 		<section id='#contact' className='mx-auto max-w-3xl px-6 py-24 text-center font-mono'>
 			<span className='text-xs font-semibold uppercase tracking-[0.25em] text-accent'>Contact</span>
-			<h2 className='mt-3 text-3xl font-bold text-white sm:text-4xl'>Let's build something.</h2>
 			<p className='mx-auto mt-4 max-w-lg text-sm text-zinc-400 sm:text-base'>
-				Whether it's an opportunity, a project idea or just a chat about systems and football — my inbox is
-				always open.&nbsp;👋
+				Always open for a chat, don't hesitate to reach out :D
 			</p>
 
 			<div className='mt-10 grid gap-4 sm:grid-cols-3'>
