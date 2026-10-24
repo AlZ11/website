@@ -9,14 +9,14 @@ import Footer from '../components/Footer.tsx';
 import Map from './pages/map.tsx';
 import AnimatedRoutes from '../components/Transition.tsx';
 
-const PATH = ['', '/about', '/projects'];
-// test comment
+const PATH = ['', '/about', '/projects', '/map'];
+
 function App() {
 	return (
 		<Router>
 			<AuroraBackground>
 				<div className='relative z-10 flex min-h-screen flex-col'>
-					<Navbar options={['About', 'Projects']} />
+					<Navbar options={['About', 'Projects', 'Map']} />
 					<div className='flex-1'>
 						<AnimatedRoutes paths={PATH}>
 							<Landing />
