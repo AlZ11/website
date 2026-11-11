@@ -65,15 +65,6 @@ const PROJECTS = [
 		]
 	},
 	{
-		name: 'Ray Tracer',
-		tag: 'C++ · Graphics',
-		description:
-			'A compact C++ ray tracer, incrementally adding spheres, materials, a depth-of-field camera, soft shadows and Monte-Carlo global illumination until it renders photorealistic scenes — all in fewer than 2k lines of self-contained code, ready for BVH acceleration, textures and volumetric effects.',
-		imageSrc: <SiRaycast size={ICONSIZE} />,
-		href: 'https://github.com/AlZ11/Ray-Tracer',
-		tools: [{ icon: <SiCplusplus />, name: 'C++' }]
-	},
-	{
 		name: 'GeoDemo Visualisations',
 		tag: 'Python · Dataviz',
 		description:

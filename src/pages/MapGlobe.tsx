@@ -138,13 +138,9 @@ export default function MapGlobe() {
 			<div ref={mountRef} className='absolute inset-0' aria-hidden />
 
 			<div className='pointer-events-none absolute left-6 top-6 max-w-[16rem] sm:left-10 sm:top-10 sm:max-w-sm'>
-				<div className='text-xs font-semibold uppercase tracking-[0.25em] text-accent'>Journey</div>
 				<h1 className='mt-2 text-3xl font-extrabold text-white sm:text-4xl'>
 					Places I've <span className='text-gradient'>been</span>
 				</h1>
-				<p className='mt-3 hidden text-sm text-zinc-400 sm:block'>
-					Spin the globe to trace where I've studied, worked and travelled. Tap a pin to read the story.
-				</p>
 				<div className='mt-4 flex flex-wrap gap-x-3 gap-y-1 text-xs text-zinc-500'>
 					<span>
 						<b className='text-zinc-300'>5</b> countries
@@ -153,7 +149,7 @@ export default function MapGlobe() {
 						<b className='text-zinc-300'>20</b> places
 					</span>
 					<span>
-						<b className='text-accent'>◆</b> lived / studied
+						<b className='text-accent'>◆</b> lived
 					</span>
 				</div>
 			</div>
