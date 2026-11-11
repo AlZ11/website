@@ -232,7 +232,7 @@ function InfoCard({ place, onClose }: { place: Place; onClose: () => void }) {
 			<div className='px-6 pb-6 pt-4'>
 				<h2 className='text-[26px] font-bold text-white'>{place.city}</h2>
 				<div className='mt-0.5 text-[13px] text-zinc-400'>{place.country}</div>
-				<p className='mt-3.5 text-[13px] leading-relaxed text-zinc-200'>{place.highlight}</p>
+				{/*<p className='mt-3.5 text-[13px] leading-relaxed text-zinc-200'>{place.highlight}</p>*/}
 				{place.roles && (
 					<div className='mt-4 flex flex-col gap-2.5 border-t border-white/10 pt-4'>
 						{place.roles.map((r) => (

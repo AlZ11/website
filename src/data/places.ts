@@ -10,7 +10,7 @@ export type Place = {
 	type: 'home' | 'lived' | 'visited';
 	tag?: string;
 	/** One-line highlight shown on the card. Edit freely. */
-	// highlight: string;
+	highlight: string;
 	/** Only on home/lived places. */
 	roles?: Role[];
 };
