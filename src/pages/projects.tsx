@@ -3,7 +3,6 @@ import { IoMdGlobe } from 'react-icons/io';
 import { AiOutlineStock } from 'react-icons/ai';
 import { GiSoccerBall } from 'react-icons/gi';
 import {
-	SiRaycast,
 	SiTypescript,
 	SiTailwindcss,
 	SiCss3,
